@@ -14,7 +14,7 @@ angular.module('app', [
     $sceDelegateProvider.resourceUrlWhitelist([
     	'self',
     	'https://www.google.com/calendar/**',
-    	'http://amalionsclub.tumblr.com/api/read/json/',
+    	'http://amalc-photo-blog.tumblr.com/api/read/json/',
     	'http://*.media.tumblr.com/*.jpg'
     ]);
     $httpProvider.defaults.useXDomain = true;
