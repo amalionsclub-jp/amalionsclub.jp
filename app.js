@@ -67,7 +67,7 @@ angular.module('app', [
     };
 })
 .factory("Photos", ['$route','$resource', '$window', function($route, $resource, $window) {
-    var Photos = $resource('//amalionsclub.tumblr.com/api/read/json',{num:30, callback:'JSON_CALLBACK'}, {
+    var Photos = $resource('//amalc-photo-blog.tumblr.com/api/read/json',{num:30, callback:'JSON_CALLBACK'}, {
     	get:{method:'JSONP',isArray:false,cache:true}
     });
     return Photos;
